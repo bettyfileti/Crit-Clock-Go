@@ -1,0 +1,114 @@
+/* HTML Tags */
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #FFF2F2;
+    color: #324742;
+    margin: 40px 80px 80px 80px;
+}
+
+h1{
+    font-size: 48px;
+    line-height: 64px;
+    font-weight: 900;
+    margin-bottom: 48px;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 0px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    margin-top: 40px;
+}
+
+body{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: .3px;
+}
+
+input {
+    background-color: #fff;
+    padding: 8px;
+    font-size: 20px;
+    border-color: pink;
+}
+
+footer {
+    font-size: 10px;
+}
+
+/* -------------------------------------------------------------- */
+/* Classes */
+
+.main {
+    background-color:white;
+    border-bottom-color: #324742;
+    border-bottom-style: solid;
+    border-bottom-width: 8px;
+    padding: 40px;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+
+.secondary {
+    margin-top: 16px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+  
+.column {
+    flex: 50%;
+    padding: 0 40px 24px 0;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.inputTime-Row {
+    display: flex;
+    flex-direction: row;
+}
+
+.inputTime-Row form {
+    margin-right: 40px;
+}
+
+.inputTime-Container{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputTime-Container label{
+    font-variant: small-caps;
+    /* text-align: center; */
+    letter-spacing: 1px;
+    margin-bottom: -4px;
+}
+
+
+/* -------------------------------------------------------------- */
+/* IDs */
+
+#hotSeatTime, #breakBonus {
+    background-color: aquamarine;
+    padding: 2px 8px 2px 8px;
+}
+
+/* -------------------------------------------------------------- */
+/* Media Queries */
+
+@media screen and (max-width: 600px) {
+    .row {
+        flex-direction: column-reverse;
+    }
+
+    .inputTime-Row {
+        flex-direction: column;
+    }
+  }

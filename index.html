@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crit Clock Go</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/jpg" href="assets/critClock-favicon-01.png"/>
+</head>
+
+<body>
+    <h1>Crit Clock</h1>
+
+    <section class="main">
+
+        <div class="inputTime-Row">
+
+            <form class="inputTime-Container">
+                <label for="startTime">start time</label>
+                <input type="time" id="startTime" value="08:00">
+            </form>
+
+            <form class="inputTime-Container">
+                <label for="endTime">end time</label>
+                <input type="time" id="endTime" value="09:00">
+            </form>
+
+        </div>
+
+
+
+        <div class="calculator">
+            <p>
+                <input type="number" id="participants" name="participants" min="1" max="100" value="5">
+                participants get
+                <span id="hotSeatTime">0</span>
+                minutes in the hot seat.
+                Plus, you get a
+                <input type="number" id="breakTime" name="breakTime" min="0" max="100" value="10">
+                minute break.
+            </p>
+
+        </div>
+
+
+    </section>
+
+    <!-- Pad your time -->
+    <section class="secondary">
+        <div class = "row">
+            <div class = "column">
+                <div>
+                    <p>
+                        <input type="checkbox" id="addPadding" name="addPadding" value="true" aria-checked="true" checked>
+                        <label for="addPadding">Add 1-minute Padding</label>
+                    </p>
+                    
+                </div>
+        
+                <div>
+                    <h2>Pad your time</h2>
+                    <p>
+                        Timers sometimes go off at the exact wrong moment. This timer has 1-minute of buffer time built in, to
+                        help you wrap things up.
+                    </p>
+                </div>
+            </div>
+
+            <div class = "column">
+                <div id = "bonusAlert">
+                    <p>
+                        <span id="breakBonusText">
+                            You can increase your break time to
+                            <span id="breakBonus">0</span>
+                            minutes, and still give everyone 
+                            <span id="hotSeatTime2">0</span>
+                            minutes to present.
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <footer>
+        <p>
+            Made by Betty Fileti, 2021
+        </p>
+    </footer>
+
+    <script src="critClock.js"></script>
+</body>
+
+</html>
